@@ -106,8 +106,160 @@ const megaMenuData = {
         { title: 'Manuals & Reports', href: '#' },
       ],
     },
+    {
+        title: 'Featured',
+        links: [
+            { title: 'Photo Books', href: '#' },
+            { title: 'Comic Books', href: '#' },
+            { title: 'Coloring Books', href: '#' },
+        ]
+    }
   ],
-  // Add other main categories here if they need mega menus
+  'Marketing Materials': [
+    {
+        title: 'Flyers & Brochures',
+        links: [
+            { title: 'Flyers', href: '#' },
+            { title: 'Club Flyers', href: '#' },
+            { title: 'Brochures', href: '#' },
+            { title: 'Leaflets', href: '#' },
+        ]
+    },
+    {
+        title: 'Cards & Menus',
+        links: [
+            { title: 'Postcards', href: '#' },
+            { title: 'Invitations', href: '#' },
+            { title: 'Take-out Menus', href: '#' },
+            { title: 'Rack Cards', href: '#' },
+        ]
+    },
+    {
+        title: 'Promotional Items',
+        links: [
+            { title: 'Bookmarks', href: '#' },
+            { title: 'Hang Tags', href: '#' },
+            { title: 'Door Hangers', href: '#' },
+            { title: 'Table Tents', href: '#' },
+        ]
+    }
+  ],
+  'Business Cards': [
+    {
+        title: 'By Paper Type',
+        links: [
+            { title: 'Standard Matte', href: '#' },
+            { title: 'Premium Glossy', href: '#' },
+            { title: 'Recycled Paper', href: '#' },
+            { title: 'Ultra Thick', href: '#' },
+        ]
+    },
+    {
+        title: 'By Shape & Corner',
+        links: [
+            { title: 'Standard', href: '#' },
+            { title: 'Square', href: '#' },
+            { title: 'Rounded Corner', href: '#' },
+            { title: 'Slim', href: '#' },
+        ]
+    },
+    {
+        title: 'Specialty Cards',
+        links: [
+            { title: 'Loyalty Cards', href: '#' },
+            { title: 'Appointment Cards', href: '#' },
+            { title: 'NFC Business Cards', href: '#' },
+            { title: 'Plastic Business Cards', href: '#' },
+        ]
+    }
+  ],
+  'Invitations & Stationery': [
+    {
+        title: 'Invitations',
+        links: [
+            { title: 'Wedding Invitations', href: '#' },
+            { title: 'Party Invitations', href: '#' },
+            { title: 'Baby Shower Invitations', href: '#' },
+            { title: 'Graduation Announcements', href: '#' },
+        ]
+    },
+    {
+        title: 'Stationery',
+        links: [
+            { title: 'Letterheads', href: '#' },
+            { title: 'Envelopes', href: '#' },
+            { title: 'Notepads', href: '#' },
+            { title: 'Thank You Cards', href: '#' },
+        ]
+    },
+    {
+        title: 'Greeting Cards',
+        links: [
+            { title: 'Holiday Cards', href: '#' },
+            { title: 'Birthday Cards', href: '#' },
+            { title: 'Custom Greeting Cards', href: '#' },
+        ]
+    }
+  ],
+  'Stickers & Labels': [
+    {
+        title: 'Stickers by Shape',
+        links: [
+            { title: 'Die-Cut Stickers', href: '#' },
+            { title: 'Round Stickers', href: '#' },
+            { title: 'Rectangular Stickers', href: '#' },
+            { title: 'Square Stickers', href: '#' },
+            { title: 'Oval Stickers', href: '#' },
+        ]
+    },
+    {
+        title: 'Labels',
+        links: [
+            { title: 'Roll Labels', href: '#' },
+            { title: 'Sheet Labels', href: '#' },
+            { title: 'Product Labels', href: '#' },
+            { title: 'Mailing Labels', href: '#' },
+        ]
+    },
+    {
+        title: 'Specialty',
+        links: [
+            { title: 'Bumper Stickers', href: '#' },
+            { title: 'Window Clings', href: '#' },
+            { title: 'Holographic Stickers', href: '#' },
+            { title: 'Clear Stickers', href: '#' },
+        ]
+    }
+  ],
+  'Signs & Banners': [
+    {
+        title: 'Banners',
+        links: [
+            { title: 'Vinyl Banners', href: '#' },
+            { title: 'Mesh Banners', href: '#' },
+            { title: 'Fabric Banners', href: '#' },
+            { title: 'Retractable Banners', href: '#' },
+        ]
+    },
+    {
+        title: 'Rigid Signs',
+        links: [
+            { title: 'Foam Board Signs', href: '#' },
+            { title: 'Corrugated Plastic Signs', href: '#' },
+            { title: 'Aluminum Signs', href: '#' },
+            { title: 'Yard Signs', href: '#' },
+        ]
+    },
+    {
+        title: 'Large Format',
+        links: [
+            { title: 'Posters', href: '#' },
+            { title: 'Wall Decals', href: '#' },
+            { title: 'Window Graphics', href: '#' },
+            { title: 'Backlit Posters', href: '#' },
+        ]
+    }
+  ]
 };
 
 export default function Header() {
