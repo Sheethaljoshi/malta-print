@@ -22,68 +22,68 @@ const megaMenuData = {
     {
       title: 'Magazines, Books & Catalogues',
       links: [
-        { title: 'Saddle Stitched', href: '#' },
-        { title: 'Perfect Binding', href: '#' },
-        { title: 'Paperback Books', href: '#' },
-        { title: 'Books', href: '#' },
-        { title: 'Booklets', href: '#' },
-        { title: 'Catalogs', href: '#' },
-        { title: 'Magazines', href: '#' },
-        { title: 'Zines', href: '#' },
-        { title: 'Journals', href: '#' },
-        { title: 'Manuals', href: '#' },
+        { title: 'Saddle Stitched', href: '/design' },
+        { title: 'Perfect Binding', href: '/design' },
+        { title: 'Paperback Books', href: '/design' },
+        { title: 'Books', href: '/design' },
+        { title: 'Booklets', href: '/design' },
+        { title: 'Catalogs', href: '/design' },
+        { title: 'Magazines', href: '/design' },
+        { title: 'Zines', href: '/design' },
+        { title: 'Journals', href: '/design' },
+        { title: 'Manuals', href: '/design' },
       ],
     },
     {
       title: 'Marketing Materials',
       links: [
-        { title: 'Flyers', href: '#' },
-        { title: 'Club Flyers', href: '#' },
-        { title: 'Brochures', href: '#' },
-        { title: 'Take-out Menus', href: '#' },
-        { title: 'Postcards and Invitations', href: '#' },
+        { title: 'Flyers', href: '/design' },
+        { title: 'Club Flyers', href: '/design' },
+        { title: 'Brochures', href: '/design' },
+        { title: 'Take-out Menus', href: '/design' },
+        { title: 'Postcards and Invitations', href: '/design' },
       ],
     },
     {
       title: 'Stationery',
       links: [
-        { title: 'Envelopes', href: '#' },
-        { title: 'Bookmarks', href: '#' },
-        { title: 'Hang Tags', href: '#' },
-        { title: 'Door hangers', href: '#' },
+        { title: 'Envelopes', href: '/design' },
+        { title: 'Bookmarks', href: '/design' },
+        { title: 'Hang Tags', href: '/design' },
+        { title: 'Door hangers', href: '/design' },
       ],
     },
      {
       title: 'Business Cards',
       links: [
-        { title: 'Standard business cards', href: '#' },
-        { title: 'Square Business Cards', href: '#' },
-        { title: 'Glossy Business Cards', href: '#' },
-        { title: 'Matte Business Cards', href: '#' },
-        { title: 'Rounded Corner Business Cards', href: '#' },
-        { title: 'Loyalty Cards', href: '#' },
-        { title: 'Appointment Cards', href: '#' },
+        { title: 'Standard business cards', href: '/design' },
+        { title: 'Square Business Cards', href: '/design' },
+        { title: 'Glossy Business Cards', href: '/design' },
+        { title: 'Matte Business Cards', href: '/design' },
+        { title: 'Rounded Corner Business Cards', href: '/design' },
+        { title: 'Loyalty Cards', href: '/design' },
+        { title: 'Appointment Cards', href: '/design' },
       ],
     },
     {
       title: 'Signs & Banners',
       links: [
-        { title: 'Banners', href: '#' },
-        { title: 'Rigid Signs', href: '#' },
-        { title: 'Corrugated A-Frame Signs', href: '#' },
-        { title: 'Retractable Banners', href: '#' },
+        { title: 'Banners', href: '/design' },
+        { title: 'Rigid Signs', href: '/design' },
+        { title: 'Corrugated A-Frame Signs', href: '/design' },
+        { title: 'Retractable Banners', href: '/design' },
       ],
     },
     {
       title: 'Stickers and Labels',
       links: [
-        { title: 'Die-Cut Stickers', href: '#' },
-        { title: 'Round Stickers', href: '#' },
-        { title: 'Rectangular Stickers', href: '#' },
-        { title: 'Custom Shape Stickers', href: '#' },
-        { title: 'Oval Stickers', href: '#' },
-        { title: 'Square Stickers', href: '#' },
-        { title: 'Custom Roll labels', href: '#' },
+        { title: 'Die-Cut Stickers', href: '/design' },
+        { title: 'Round Stickers', href: '/design' },
+        { title: 'Rectangular Stickers', href: '/design' },
+        { title: 'Custom Shape Stickers', href: '/design' },
+        { title: 'Oval Stickers', href: '/design' },
+        { title: 'Square Stickers', href: '/design' },
+        { title: 'Custom Roll labels', href: '/design' },
       ],
     },
   ],
@@ -91,27 +91,27 @@ const megaMenuData = {
     {
       title: 'Binding Options',
       links: [
-        { title: 'Saddle Stitched', href: '#' },
-        { title: 'Perfect Binding', href: '#' },
-        { title: 'Spiral Bound', href: '#' },
-        { title: 'Wire-O Binding', href: '#' },
+        { title: 'Saddle Stitched', href: '/design' },
+        { title: 'Perfect Binding', href: '/design' },
+        { title: 'Spiral Bound', href: '/design' },
+        { title: 'Wire-O Binding', href: '/design' },
       ],
     },
     {
       title: 'Publication Types',
       links: [
-        { title: 'Magazines', href: '#' },
-        { title: 'Catalogs', href: '#' },
-        { title: 'Lookbooks', href: '#' },
-        { title: 'Manuals & Reports', href: '#' },
+        { title: 'Magazines', href: '/design' },
+        { title: 'Catalogs', href: '/design' },
+        { title: 'Lookbooks', href: '/design' },
+        { title: 'Manuals & Reports', href: '/design' },
       ],
     },
     {
         title: 'Featured',
         links: [
-            { title: 'Photo Books', href: '#' },
-            { title: 'Comic Books', href: '#' },
-            { title: 'Coloring Books', href: '#' },
+            { title: 'Photo Books', href: '/design' },
+            { title: 'Comic Books', href: '/design' },
+            { title: 'Coloring Books', href: '/design' },
         ]
     }
   ],
@@ -119,28 +119,28 @@ const megaMenuData = {
     {
         title: 'Flyers & Brochures',
         links: [
-            { title: 'Flyers', href: '#' },
-            { title: 'Club Flyers', href: '#' },
-            { title: 'Brochures', href: '#' },
-            { title: 'Leaflets', href: '#' },
+            { title: 'Flyers', href: '/design' },
+            { title: 'Club Flyers', href: '/design' },
+            { title: 'Brochures', href: '/design' },
+            { title: 'Leaflets', href: '/design' },
         ]
     },
     {
         title: 'Cards & Menus',
         links: [
-            { title: 'Postcards', href: '#' },
-            { title: 'Invitations', href: '#' },
-            { title: 'Take-out Menus', href: '#' },
-            { title: 'Rack Cards', href: '#' },
+            { title: 'Postcards', href: '/design' },
+            { title: 'Invitations', href: '/design' },
+            { title: 'Take-out Menus', href: '/design' },
+            { title: 'Rack Cards', href: '/design' },
         ]
     },
     {
         title: 'Promotional Items',
         links: [
-            { title: 'Bookmarks', href: '#' },
-            { title: 'Hang Tags', href: '#' },
-            { title: 'Door Hangers', href: '#' },
-            { title: 'Table Tents', href: '#' },
+            { title: 'Bookmarks', href: '/design' },
+            { title: 'Hang Tags', href: '/design' },
+            { title: 'Door Hangers', href: '/design' },
+            { title: 'Table Tents', href: '/design' },
         ]
     }
   ],
@@ -148,28 +148,28 @@ const megaMenuData = {
     {
         title: 'By Paper Type',
         links: [
-            { title: 'Standard Matte', href: '#' },
-            { title: 'Premium Glossy', href: '#' },
-            { title: 'Recycled Paper', href: '#' },
-            { title: 'Ultra Thick', href: '#' },
+            { title: 'Standard Matte', href: '/design' },
+            { title: 'Premium Glossy', href: '/design' },
+            { title: 'Recycled Paper', href: '/design' },
+            { title: 'Ultra Thick', href: '/design' },
         ]
     },
     {
         title: 'By Shape & Corner',
         links: [
-            { title: 'Standard', href: '#' },
-            { title: 'Square', href: '#' },
-            { title: 'Rounded Corner', href: '#' },
-            { title: 'Slim', href: '#' },
+            { title: 'Standard', href: '/design' },
+            { title: 'Square', href: '/design' },
+            { title: 'Rounded Corner', href: '/design' },
+            { title: 'Slim', href: '/design' },
         ]
     },
     {
         title: 'Specialty Cards',
         links: [
-            { title: 'Loyalty Cards', href: '#' },
-            { title: 'Appointment Cards', href: '#' },
-            { title: 'NFC Business Cards', href: '#' },
-            { title: 'Plastic Business Cards', href: '#' },
+            { title: 'Loyalty Cards', href: '/design' },
+            { title: 'Appointment Cards', href: '/design' },
+            { title: 'NFC Business Cards', href: '/design' },
+            { title: 'Plastic Business Cards', href: '/design' },
         ]
     }
   ],
@@ -177,27 +177,27 @@ const megaMenuData = {
     {
         title: 'Invitations',
         links: [
-            { title: 'Wedding Invitations', href: '#' },
-            { title: 'Party Invitations', href: '#' },
-            { title: 'Baby Shower Invitations', href: '#' },
-            { title: 'Graduation Announcements', href: '#' },
+            { title: 'Wedding Invitations', href: '/design' },
+            { title: 'Party Invitations', href: '/design' },
+            { title: 'Baby Shower Invitations', href: '/design' },
+            { title: 'Graduation Announcements', href: '/design' },
         ]
     },
     {
         title: 'Stationery',
         links: [
-            { title: 'Letterheads', href: '#' },
-            { title: 'Envelopes', href: '#' },
-            { title: 'Notepads', href: '#' },
-            { title: 'Thank You Cards', href: '#' },
+            { title: 'Letterheads', href: '/design' },
+            { title: 'Envelopes', href: '/design' },
+            { title: 'Notepads', href: '/design' },
+            { title: 'Thank You Cards', href: '/design' },
         ]
     },
     {
         title: 'Greeting Cards',
         links: [
-            { title: 'Holiday Cards', href: '#' },
-            { title: 'Birthday Cards', href: '#' },
-            { title: 'Custom Greeting Cards', href: '#' },
+            { title: 'Holiday Cards', href: '/design' },
+            { title: 'Birthday Cards', href: '/design' },
+            { title: 'Custom Greeting Cards', href: '/design' },
         ]
     }
   ],
@@ -205,29 +205,29 @@ const megaMenuData = {
     {
         title: 'Stickers by Shape',
         links: [
-            { title: 'Die-Cut Stickers', href: '#' },
-            { title: 'Round Stickers', href: '#' },
-            { title: 'Rectangular Stickers', href: '#' },
-            { title: 'Square Stickers', href: '#' },
-            { title: 'Oval Stickers', href: '#' },
+            { title: 'Die-Cut Stickers', href: '/design' },
+            { title: 'Round Stickers', href: '/design' },
+            { title: 'Rectangular Stickers', href: '/design' },
+            { title: 'Square Stickers', href: '/design' },
+            { title: 'Oval Stickers', href: '/design' },
         ]
     },
     {
         title: 'Labels',
         links: [
-            { title: 'Roll Labels', href: '#' },
-            { title: 'Sheet Labels', href: '#' },
-            { title: 'Product Labels', href: '#' },
-            { title: 'Mailing Labels', href: '#' },
+            { title: 'Roll Labels', href: '/design' },
+            { title: 'Sheet Labels', href: '/design' },
+            { title: 'Product Labels', href: '/design' },
+            { title: 'Mailing Labels', href: '/design' },
         ]
     },
     {
         title: 'Specialty',
         links: [
-            { title: 'Bumper Stickers', href: '#' },
-            { title: 'Window Clings', href: '#' },
-            { title: 'Holographic Stickers', href: '#' },
-            { title: 'Clear Stickers', href: '#' },
+            { title: 'Bumper Stickers', href: '/design' },
+            { title: 'Window Clings', href: '/design' },
+            { title: 'Holographic Stickers', href: '/design' },
+            { title: 'Clear Stickers', href: '/design' },
         ]
     }
   ],
@@ -235,28 +235,28 @@ const megaMenuData = {
     {
         title: 'Banners',
         links: [
-            { title: 'Vinyl Banners', href: '#' },
-            { title: 'Mesh Banners', href: '#' },
-            { title: 'Fabric Banners', href: '#' },
-            { title: 'Retractable Banners', href: '#' },
+            { title: 'Vinyl Banners', href: '/design' },
+            { title: 'Mesh Banners', href: '/design' },
+            { title: 'Fabric Banners', href: '/design' },
+            { title: 'Retractable Banners', href: '/design' },
         ]
     },
     {
         title: 'Rigid Signs',
         links: [
-            { title: 'Foam Board Signs', href: '#' },
-            { title: 'Corrugated Plastic Signs', href: '#' },
-            { title: 'Aluminum Signs', href: '#' },
-            { title: 'Yard Signs', href: '#' },
+            { title: 'Foam Board Signs', href: '/design' },
+            { title: 'Corrugated Plastic Signs', href: '/design' },
+            { title: 'Aluminum Signs', href: '/design' },
+            { title: 'Yard Signs', href: '/design' },
         ]
     },
     {
         title: 'Large Format',
         links: [
-            { title: 'Posters', href: '#' },
-            { title: 'Wall Decals', href: '#' },
-            { title: 'Window Graphics', href: '#' },
-            { title: 'Backlit Posters', href: '#' },
+            { title: 'Posters', href: '/design' },
+            { title: 'Wall Decals', href: '/design' },
+            { title: 'Window Graphics', href: '/design' },
+            { title: 'Backlit Posters', href: '/design' },
         ]
     }
   ]
@@ -264,13 +264,13 @@ const megaMenuData = {
 
 export default function Header() {
   const secondaryNavItems = [
-    { title: 'All Products', href: '#'},
-    { title: 'Magazines, Books & Catalogs', href: '#'},
-    { title: 'Marketing Materials', href: '#'},
-    { title: 'Business Cards', href: '#'},
-    { title: 'Invitations & Stationery', href: '#'},
-    { title: 'Stickers & Labels', href: '#'},
-    { title: 'Signs & Banners', href: '#'},
+    { title: 'All Products', href: '/design'},
+    { title: 'Magazines, Books & Catalogs', href: '/design'},
+    { title: 'Marketing Materials', href: '/design'},
+    { title: 'Business Cards', href: '/design'},
+    { title: 'Invitations & Stationery', href: '/design'},
+    { title: 'Stickers & Labels', href: '/design'},
+    { title: 'Signs & Banners', href: '/design'},
   ];
 
   return (
@@ -356,7 +356,7 @@ export default function Header() {
                 <NavigationMenuItem key={item.title}>
                   {megaMenuData[item.title as keyof typeof megaMenuData] ? (
                     <>
-                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary data-[state=open]:text-muted-foreground focus:text-primary transition-colors">
+                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary data-[state=open]:text-primary focus:text-primary transition-colors">
                         {item.title}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -405,7 +405,7 @@ const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWit
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none text-muted-foreground group-hover:text-foreground transition-colors">{title}</div>
+          <div className="text-sm font-medium leading-none text-muted-foreground group-hover:text-primary transition-colors">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground/80">{children}</p>
         </a>
       </NavigationMenuLink>

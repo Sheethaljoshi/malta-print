@@ -18,10 +18,10 @@ export default function Footer() {
           <div>
             <h3 className="font-headline font-semibold mb-4">Products</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#" className="text-muted-foreground hover:text-primary">Business Cards</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary">Flyers & Leaflets</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary">Posters</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary">Stickers & Labels</Link></li>
+              <li><Link href="/design" className="text-muted-foreground hover:text-primary">Business Cards</Link></li>
+              <li><Link href="/design" className="text-muted-foreground hover:text-primary">Flyers & Leaflets</Link></li>
+              <li><Link href="/design" className="text-muted-foreground hover:text-primary">Posters</Link></li>
+              <li><Link href="/design" className="text-muted-foreground hover:text-primary">Stickers & Labels</Link></li>
             </ul>
           </div>
           <div>
