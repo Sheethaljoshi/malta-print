@@ -356,7 +356,7 @@ export default function Header() {
                 <NavigationMenuItem key={item.title}>
                   {megaMenuData[item.title as keyof typeof megaMenuData] ? (
                     <>
-                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary transition-colors">
+                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary data-[state=open]:text-muted-foreground focus:text-primary transition-colors">
                         {item.title}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -405,7 +405,7 @@ const ListItem = React.forwardRef<React.ElementRef<'a'>, React.ComponentPropsWit
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none text-muted-foreground group-hover:text-primary transition-colors">{title}</div>
+          <div className="text-sm font-medium leading-none text-muted-foreground group-hover:text-foreground transition-colors">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground/80">{children}</p>
         </a>
       </NavigationMenuLink>
