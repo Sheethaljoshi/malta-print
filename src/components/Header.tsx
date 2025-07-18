@@ -351,12 +351,12 @@ export default function Header() {
       <nav className="hidden md:block border-t border-border/40">
         <div className="container max-w-screen-2xl">
           <NavigationMenu>
-            <NavigationMenuList className="flex justify-between items-center h-12">
+            <NavigationMenuList>
               {secondaryNavItems.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   {megaMenuData[item.title as keyof typeof megaMenuData] ? (
                     <>
-                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors bg-transparent">
+                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent">
                         {item.title}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
