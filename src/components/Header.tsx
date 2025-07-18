@@ -5,9 +5,19 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Input } from './ui/input';
 
 export default function Header() {
-  const navItems = [
+  const primaryNavItems = [
     { href: '/', label: 'Products', icon: Package },
     { href: '/design', label: 'Design Online', icon: HelpCircle },
+  ];
+
+  const secondaryNavItems = [
+    { href: '#', label: 'All Products' },
+    { href: '#', label: 'Magazines, Books & Catalogs' },
+    { href: '#', label: 'Marketing Materials' },
+    { href: '#', label: 'Business Cards' },
+    { href: '#', label: 'Invitations & Stationery' },
+    { href: '#', label: 'Stickers & Labels' },
+    { href: '#', label: 'Signs & Banners' },
   ];
 
   return (
@@ -69,6 +79,15 @@ export default function Header() {
                       <HelpCircle className="w-4 h-4" />
                       Need Help?
                     </Link>
+                    {secondaryNavItems.map((item) => (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        className="transition-colors hover:text-foreground/80 text-muted-foreground"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
                 </nav>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary"/>
@@ -79,6 +98,21 @@ export default function Header() {
           </div>
         </div>
       </div>
+      <nav className="hidden md:block border-t border-border/40">
+        <div className="container max-w-screen-2xl">
+            <div className="flex justify-between items-center h-12">
+                {secondaryNavItems.map((item) => (
+                    <Link
+                        key={item.label}
+                        href={item.href}
+                        className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                    >
+                        {item.label}
+                    </Link>
+                ))}
+            </div>
+        </div>
+      </nav>
     </header>
   );
 }
