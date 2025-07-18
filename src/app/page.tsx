@@ -3,6 +3,7 @@ import ProductCard from '@/components/ProductCard';
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Award, Users, Truck, Star } from 'lucide-react';
+import FeatureSection from '@/components/FeatureSection';
 
 const products = [
   {
@@ -86,6 +87,36 @@ const testimonials = [
     }
 ]
 
+const featureSections = [
+  {
+    title: "Magazines, Books, and Catalogs",
+    description: "Describe your brand, tell your story, or showcase all your products in style. Choose the size, material, and binding that suit you, and customize magazines, books and catalogs quickly and easily—just the way you like.",
+    imageUrl: "https://placehold.co/800x800.png",
+    imageAlt: "A collection of beautifully printed magazines and books.",
+    imagePosition: "right" as const,
+    href: "/design",
+    aiHint: "magazines books"
+  },
+  {
+    title: "Business Cards for Every Profession",
+    description: "Make a lasting first impression with our wide range of business cards. From classic matte to luxurious ultra-thick cards, we have the perfect option to represent your brand identity. Upload your design or create one with our AI assistant.",
+    imageUrl: "https://placehold.co/800x800.png",
+    imageAlt: "A stack of modern business cards.",
+    imagePosition: "left" as const,
+    href: "/design",
+    aiHint: "business cards"
+  },
+  {
+    title: "Powerful Marketing Materials",
+    description: "Promote your business effectively with high-impact flyers, brochures, and posters. Our vibrant printing ensures your message stands out and grabs attention, whether on a bulletin board or in a direct mail campaign.",
+    imageUrl: "https://placehold.co/800x800.png",
+    imageAlt: "A person handing out a flyer.",
+    imagePosition: "right" as const,
+    href: "/design",
+    aiHint: "flyers marketing"
+  }
+];
+
 export default function Home() {
   return (
     <div className="bg-background">
@@ -127,6 +158,10 @@ export default function Home() {
           <CarouselNext />
         </Carousel>
       </section>
+
+      {featureSections.map((section, index) => (
+         <FeatureSection key={index} {...section} imagePosition={index % 2 === 0 ? 'right' : 'left'}/>
+      ))}
 
       <section className="bg-muted py-16">
         <div className="container mx-auto px-4">
