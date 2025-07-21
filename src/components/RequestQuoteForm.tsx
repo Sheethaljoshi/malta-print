@@ -7,7 +7,7 @@ import { useFieldArray, useForm } from 'react-hook-form';
 import { z } from 'zod';
 
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -103,7 +103,7 @@ export default function RequestQuoteForm() {
             <h3 className="font-headline text-2xl font-semibold mb-4">Your Request</h3>
             <div className="space-y-6">
               {fields.map((field, index) => (
-                <Card key={field.id} className="bg-background">
+                <Card key={field.id} className="bg-muted/50">
                   <CardContent className="p-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <FormField
@@ -344,7 +344,7 @@ export default function RequestQuoteForm() {
           
           <div>
             <h3 className="font-headline text-2xl font-semibold mb-4">Your Details</h3>
-             <Card className="bg-background">
+             <Card className="bg-muted/50">
                 <CardContent className="p-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <FormField
