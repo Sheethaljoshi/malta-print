@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Award, Users, Truck, Star } from 'lucide-react';
 import FeatureSection from '@/components/FeatureSection';
+import RequestQuoteForm from '@/components/RequestQuoteForm';
 
 const products = [
   {
@@ -162,6 +163,12 @@ export default function Home() {
       {featureSections.map((section, index) => (
          <FeatureSection key={index} {...section} imagePosition={index % 2 === 0 ? 'right' : 'left'}/>
       ))}
+      
+      <section className="bg-card py-16">
+        <div className="container mx-auto px-4">
+          <RequestQuoteForm />
+        </div>
+      </section>
 
       <section className="bg-muted py-16">
         <div className="container mx-auto px-4">
