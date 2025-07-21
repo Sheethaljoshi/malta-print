@@ -16,262 +16,14 @@ import {
 } from '@/components/ui/navigation-menu';
 import { cn } from '@/lib/utils';
 import React from 'react';
+import type { Product, ProductCategory } from '@/lib/products';
+import { productsData } from '@/lib/products';
 
-const megaMenuData = {
-  'All Products': [
-    {
-      title: 'Magazines, Books & Catalogues',
-      links: [
-        { title: 'Saddle Stitched', href: '/design' },
-        { title: 'Perfect Binding', href: '/design' },
-        { title: 'Paperback Books', href: '/design' },
-        { title: 'Books', href: '/design' },
-        { title: 'Booklets', href: '/design' },
-        { title: 'Catalogs', href: '/design' },
-        { title: 'Magazines', href: '/design' },
-        { title: 'Zines', href: '/design' },
-        { title: 'Journals', href: '/design' },
-        { title: 'Manuals', href: '/design' },
-      ],
-    },
-    {
-      title: 'Marketing Materials',
-      links: [
-        { title: 'Flyers', href: '/design' },
-        { title: 'Club Flyers', href: '/design' },
-        { title: 'Brochures', href: '/design' },
-        { title: 'Take-out Menus', href: '/design' },
-        { title: 'Postcards and Invitations', href: '/design' },
-      ],
-    },
-    {
-      title: 'Stationery',
-      links: [
-        { title: 'Envelopes', href: '/design' },
-        { title: 'Bookmarks', href: '/design' },
-        { title: 'Hang Tags', href: '/design' },
-        { title: 'Door hangers', href: '/design' },
-      ],
-    },
-     {
-      title: 'Business Cards',
-      links: [
-        { title: 'Standard business cards', href: '/design' },
-        { title: 'Square Business Cards', href: '/design' },
-        { title: 'Glossy Business Cards', href: '/design' },
-        { title: 'Matte Business Cards', href: '/design' },
-        { title: 'Rounded Corner Business Cards', href: '/design' },
-        { title: 'Loyalty Cards', href: '/design' },
-        { title: 'Appointment Cards', href: '/design' },
-      ],
-    },
-    {
-      title: 'Signs & Banners',
-      links: [
-        { title: 'Banners', href: '/design' },
-        { title: 'Rigid Signs', href: '/design' },
-        { title: 'Corrugated A-Frame Signs', href: '/design' },
-        { title: 'Retractable Banners', href: '/design' },
-      ],
-    },
-    {
-      title: 'Stickers and Labels',
-      links: [
-        { title: 'Die-Cut Stickers', href: '/design' },
-        { title: 'Round Stickers', href: '/design' },
-        { title: 'Rectangular Stickers', href: '/design' },
-        { title: 'Custom Shape Stickers', href: '/design' },
-        { title: 'Oval Stickers', href: '/design' },
-        { title: 'Square Stickers', href: '/design' },
-        { title: 'Custom Roll labels', href: '/design' },
-      ],
-    },
-  ],
-  'Magazines, Books & Catalogs': [
-    {
-      title: 'Binding Options',
-      links: [
-        { title: 'Saddle Stitched', href: '/design' },
-        { title: 'Perfect Binding', href: '/design' },
-        { title: 'Spiral Bound', href: '/design' },
-        { title: 'Wire-O Binding', href: '/design' },
-      ],
-    },
-    {
-      title: 'Publication Types',
-      links: [
-        { title: 'Magazines', href: '/design' },
-        { title: 'Catalogs', href: '/design' },
-        { title: 'Lookbooks', href: '/design' },
-        { title: 'Manuals & Reports', href: '/design' },
-      ],
-    },
-    {
-        title: 'Featured',
-        links: [
-            { title: 'Photo Books', href: '/design' },
-            { title: 'Comic Books', href: '/design' },
-            { title: 'Coloring Books', href: '/design' },
-        ]
-    }
-  ],
-  'Marketing Materials': [
-    {
-        title: 'Flyers & Brochures',
-        links: [
-            { title: 'Flyers', href: '/design' },
-            { title: 'Club Flyers', href: '/design' },
-            { title: 'Brochures', href: '/design' },
-            { title: 'Leaflets', href: '/design' },
-        ]
-    },
-    {
-        title: 'Cards & Menus',
-        links: [
-            { title: 'Postcards', href: '/design' },
-            { title: 'Invitations', href: '/design' },
-            { title: 'Take-out Menus', href: '/design' },
-            { title: 'Rack Cards', href: '/design' },
-        ]
-    },
-    {
-        title: 'Promotional Items',
-        links: [
-            { title: 'Bookmarks', href: '/design' },
-            { title: 'Hang Tags', href: '/design' },
-            { title: 'Door Hangers', href: '/design' },
-            { title: 'Table Tents', href: '/design' },
-        ]
-    }
-  ],
-  'Business Cards': [
-    {
-        title: 'By Paper Type',
-        links: [
-            { title: 'Standard Matte', href: '/design' },
-            { title: 'Premium Glossy', href: '/design' },
-            { title: 'Recycled Paper', href: '/design' },
-            { title: 'Ultra Thick', href: '/design' },
-        ]
-    },
-    {
-        title: 'By Shape & Corner',
-        links: [
-            { title: 'Standard', href: '/design' },
-            { title: 'Square', href: '/design' },
-            { title: 'Rounded Corner', href: '/design' },
-            { title: 'Slim', href: '/design' },
-        ]
-    },
-    {
-        title: 'Specialty Cards',
-        links: [
-            { title: 'Loyalty Cards', href: '/design' },
-            { title: 'Appointment Cards', href: '/design' },
-            { title: 'NFC Business Cards', href: '/design' },
-            { title: 'Plastic Business Cards', href: '/design' },
-        ]
-    }
-  ],
-  'Invitations & Stationery': [
-    {
-        title: 'Invitations',
-        links: [
-            { title: 'Wedding Invitations', href: '/design' },
-            { title: 'Party Invitations', href: '/design' },
-            { title: 'Baby Shower Invitations', href: '/design' },
-            { title: 'Graduation Announcements', href: '/design' },
-        ]
-    },
-    {
-        title: 'Stationery',
-        links: [
-            { title: 'Letterheads', href: '/design' },
-            { title: 'Envelopes', href: '/design' },
-            { title: 'Notepads', href: '/design' },
-            { title: 'Thank You Cards', href: '/design' },
-        ]
-    },
-    {
-        title: 'Greeting Cards',
-        links: [
-            { title: 'Holiday Cards', href: '/design' },
-            { title: 'Birthday Cards', href: '/design' },
-            { title: 'Custom Greeting Cards', href: '/design' },
-        ]
-    }
-  ],
-  'Stickers & Labels': [
-    {
-        title: 'Stickers by Shape',
-        links: [
-            { title: 'Die-Cut Stickers', href: '/design' },
-            { title: 'Round Stickers', href: '/design' },
-            { title: 'Rectangular Stickers', href: '/design' },
-            { title: 'Square Stickers', href: '/design' },
-            { title: 'Oval Stickers', href: '/design' },
-        ]
-    },
-    {
-        title: 'Labels',
-        links: [
-            { title: 'Roll Labels', href: '/design' },
-            { title: 'Sheet Labels', href: '/design' },
-            { title: 'Product Labels', href: '/design' },
-            { title: 'Mailing Labels', href: '/design' },
-        ]
-    },
-    {
-        title: 'Specialty',
-        links: [
-            { title: 'Bumper Stickers', href: '/design' },
-            { title: 'Window Clings', href: '/design' },
-            { title: 'Holographic Stickers', href: '/design' },
-            { title: 'Clear Stickers', href: '/design' },
-        ]
-    }
-  ],
-  'Signs & Banners': [
-    {
-        title: 'Banners',
-        links: [
-            { title: 'Vinyl Banners', href: '/design' },
-            { title: 'Mesh Banners', href: '/design' },
-            { title: 'Fabric Banners', href: '/design' },
-            { title: 'Retractable Banners', href: '/design' },
-        ]
-    },
-    {
-        title: 'Rigid Signs',
-        links: [
-            { title: 'Foam Board Signs', href: '/design' },
-            { title: 'Corrugated Plastic Signs', href: '/design' },
-            { title: 'Aluminum Signs', href: '/design' },
-            { title: 'Yard Signs', href: '/design' },
-        ]
-    },
-    {
-        title: 'Large Format',
-        links: [
-            { title: 'Posters', href: '/design' },
-            { title: 'Wall Decals', href: '/design' },
-            { title: 'Window Graphics', href: '/design' },
-            { title: 'Backlit Posters', href: '/design' },
-        ]
-    }
-  ]
-};
+const megaMenuData = productsData;
+
 
 export default function Header() {
-  const secondaryNavItems = [
-    { title: 'All Products', href: '/design'},
-    { title: 'Magazines, Books & Catalogs', href: '/design'},
-    { title: 'Marketing Materials', href: '/design'},
-    { title: 'Business Cards', href: '/design'},
-    { title: 'Invitations & Stationery', href: '/design'},
-    { title: 'Stickers & Labels', href: '/design'},
-    { title: 'Signs & Banners', href: '/design'},
-  ];
+  const secondaryNavItems = Object.keys(megaMenuData);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -331,11 +83,11 @@ export default function Header() {
                   </Link>
                   {secondaryNavItems.map((item) => (
                     <Link
-                      key={item.title}
-                      href={item.href}
+                      key={item}
+                      href="/design"
                       className="transition-colors hover:text-foreground/80 text-muted-foreground"
                     >
-                      {item.title}
+                      {item}
                     </Link>
                   ))}
                 </nav>
@@ -352,22 +104,22 @@ export default function Header() {
         <div className="container max-w-screen-2xl">
           <NavigationMenu>
             <NavigationMenuList className="group flex flex-1 list-none items-center justify-start space-x-6">
-              {secondaryNavItems.map((item) => (
-                <NavigationMenuItem key={item.title}>
-                  {megaMenuData[item.title as keyof typeof megaMenuData] ? (
+              {secondaryNavItems.map((category) => (
+                <NavigationMenuItem key={category}>
+                  {megaMenuData[category as keyof typeof megaMenuData] ? (
                     <>
-                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary data-[state=open]:text-primary focus:text-primary transition-colors">
-                        {item.title}
+                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary focus:text-primary transition-colors">
+                        {category}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="grid w-[80vw] max-w-screen-xl grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6 p-8">
-                          {megaMenuData[item.title as keyof typeof megaMenuData].map((column) => (
+                          {megaMenuData[category as keyof typeof megaMenuData].map((column) => (
                             <div key={column.title}>
                               <h3 className="font-headline font-semibold text-foreground mb-4">{column.title}</h3>
                               <ul className="space-y-3">
                                 {column.links.map((link) => (
                                    <li key={link.title}>
-                                      <ListItem href={link.href} title={link.title} />
+                                      <ListItem href={`/products/${link.slug}`} title={link.title} />
                                    </li>
                                 ))}
                               </ul>
@@ -377,9 +129,9 @@ export default function Header() {
                       </NavigationMenuContent>
                     </>
                   ) : (
-                    <Link href={item.href} legacyBehavior passHref>
+                    <Link href="/design" legacyBehavior passHref>
                       <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-sm font-medium text-muted-foreground hover:text-primary transition-colors bg-transparent")}>
-                        {item.title}
+                        {category}
                       </NavigationMenuLink>
                     </Link>
                   )}
