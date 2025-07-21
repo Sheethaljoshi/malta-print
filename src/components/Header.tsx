@@ -108,7 +108,7 @@ export default function Header() {
                 <NavigationMenuItem key={category}>
                   {megaMenuData[category as keyof typeof megaMenuData] ? (
                     <>
-                      <NavigationMenuTrigger className="px-10 text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary focus:text-primary transition-colors">
+                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary focus:text-primary transition-colors">
                         {category}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
