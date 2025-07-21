@@ -32,7 +32,7 @@ export default function FeatureSection({
       )}>
         <div className={cn(
           "flex flex-col justify-center",
-          isImageLeft ? "md:col-start-2" : "md:col-start-1"
+          isImageLeft ? "md:order-2" : "md:order-1"
         )}>
           <h2 className="font-headline text-3xl font-bold text-foreground mb-4">{title}</h2>
           <p className="text-muted-foreground mb-8 text-lg">{description}</p>
@@ -47,7 +47,7 @@ export default function FeatureSection({
         </div>
         <div className={cn(
           "relative aspect-square",
-          isImageLeft ? "md:col-start-1" : "md:col-start-2"
+          isImageLeft ? "md:order-1" : "md:order-2"
         )}>
           <Image
             src={imageUrl}
