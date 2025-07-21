@@ -84,7 +84,7 @@ export default function Header() {
                   {secondaryNavItems.map((item) => (
                     <Link
                       key={item}
-                      href="/design"
+                      href={`/products/${megaMenuData[item as keyof typeof megaMenuData][0].links[0].slug}`}
                       className="transition-colors hover:text-foreground/80 text-muted-foreground"
                     >
                       {item}
@@ -103,7 +103,7 @@ export default function Header() {
       <nav className="hidden md:block border-t border-border/40">
         <div className="container max-w-screen-2xl">
           <NavigationMenu>
-            <NavigationMenuList className="group flex flex-1 list-none items-center justify-between">
+            <NavigationMenuList className="justify-between">
               {secondaryNavItems.map((category) => (
                 <NavigationMenuItem key={category}>
                   {megaMenuData[category as keyof typeof megaMenuData] ? (
@@ -129,7 +129,7 @@ export default function Header() {
                       </NavigationMenuContent>
                     </>
                   ) : (
-                    <Link href="/design" legacyBehavior passHref>
+                    <Link href={`/products/${megaMenuData[category as keyof typeof megaMenuData][0].links[0].slug}`} legacyBehavior passHref>
                       <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-sm font-medium text-muted-foreground hover:text-primary transition-colors bg-transparent")}>
                         {category}
                       </NavigationMenuLink>
