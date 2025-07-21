@@ -103,7 +103,7 @@ export default function Header() {
       <nav className="hidden md:block border-t border-border/40">
         <div className="container max-w-screen-2xl">
           <NavigationMenu>
-            <NavigationMenuList className="group flex flex-1 list-none items-center justify-start space-x-6">
+            <NavigationMenuList className="group flex flex-1 list-none items-center justify-between">
               {secondaryNavItems.map((category) => (
                 <NavigationMenuItem key={category}>
                   {megaMenuData[category as keyof typeof megaMenuData] ? (
