@@ -105,7 +105,7 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList className="justify-between">
               {secondaryNavItems.map((category) => (
-                <NavigationMenuItem key={category} className="px-6">
+                <NavigationMenuItem key={category} className="px-10">
                   {megaMenuData[category as keyof typeof megaMenuData] ? (
                     <>
                       <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary focus:text-primary transition-colors">
