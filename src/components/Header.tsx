@@ -105,10 +105,10 @@ export default function Header() {
           <NavigationMenu>
             <NavigationMenuList className="justify-between">
               {secondaryNavItems.map((category) => (
-                <NavigationMenuItem key={category} className="px-10">
+                <NavigationMenuItem key={category}>
                   {megaMenuData[category as keyof typeof megaMenuData] ? (
                     <>
-                      <NavigationMenuTrigger className="text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary focus:text-primary transition-colors">
+                      <NavigationMenuTrigger className="px-10 text-sm font-medium text-muted-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[state=open]:bg-transparent hover:text-primary focus:text-primary transition-colors">
                         {category}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -130,7 +130,7 @@ export default function Header() {
                     </>
                   ) : (
                     <Link href={`/products/${megaMenuData[category as keyof typeof megaMenuData][0].links[0].slug}`} legacyBehavior passHref>
-                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-sm font-medium text-muted-foreground hover:text-primary transition-colors bg-transparent")}>
+                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "px-10 text-sm font-medium text-muted-foreground hover:text-primary transition-colors bg-transparent")}>
                         {category}
                       </NavigationMenuLink>
                     </Link>
